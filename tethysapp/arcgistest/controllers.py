@@ -72,3 +72,8 @@ def home(request):
     }
 
     return render(request, 'arcgistest/home.html', context)
+
+@login_required()
+def service2(request):
+    context = {}
+    return render(request, 'arcgistest.service2.html', context)

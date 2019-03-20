@@ -29,6 +29,11 @@ class Arcgistest(TethysAppBase):
                 url='arcgistest',
                 controller='arcgistest.controllers.home'
             ),
+            UrlMap(
+                name='service2',
+                url='service2',
+                controller='arcgistest.controllers.service2'
+            ),
         )
 
         return url_maps
